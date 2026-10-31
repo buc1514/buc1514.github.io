@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{display:inline-block;background:#c07a2c22;border-left:3px solid #c07a2c;padding:4px 12px;border-radius:2px;text-transform:none;letter-spacing:.03em;font-size:14px}
 .card{background:#fffdf8;border:1px solid #eadfc9;border-radius:20px;padding:20px}
 
-background-image:radial-gradient(#eadfc9 1px, transparent 1px);background-size:22px 22px;
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(#eadfc9 1px, transparent 1px);background-size:22px 22px}
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ background-image:radial-gradient(#eadfc9 1px, transparent 1px);background-size:2
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>代理层的请求伪造风险是我这几年反复回到的问题。</p>
+  <p>代理层的请求伪造风险是我这几年反复回到的问题。 当前以硕士阶段研究角色的方式推进项目。</p>
   <ul class="traits">
     <li>先问样本量够不够，再看指标好不好。</li>
     <li>区间比单点诚实。</li>
@@ -89,12 +89,20 @@ background-image:radial-gradient(#eadfc9 1px, transparent 1px);background-size:2
   <div class="grid two">
     <article class="card">
       <h3>代理层的请求伪造风险里的噪声来源与最小样本量</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>代理层的请求伪造风险的判定依据与复核方式</h3>
+      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>代理层的请求伪造风险里容易误判的情形与反例</h3>
+      <span class="status">持续跟进</span>
+    </article>
+    <article class="card">
+      <h3>在推进的问题</h3>
+      <p>（代理层的请求伪造风险场景）代理层的请求伪造风险的噪声会不会盖住真实差异？用口径一致性比对比较噪声幅度与效应幅度。</p>
+      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -102,6 +110,9 @@ background-image:radial-gradient(#eadfc9 1px, transparent 1px);background-size:2
 <section id="work">
   <h2>开源</h2>
   <ul class="repos">
+    <li><div class="name"><a href="https://github.com/buc1514/consistency_ablation_matrix_1518804d" rel="noopener">consistency_ablation_matrix_1518804d</a></div>
+      <div class="desc">（代理层的请求伪造风险场景）代理层的请求伪造风险的噪声会不会盖住真实差异？用口径一致性比对比较噪声幅度与效应幅度。</div>
+    </li>
     <li><div class="name"><a href="https://github.com/buc1514/ssrf" rel="noopener">ssrf</a></div>
       <div class="desc">用一组明示的正则规则扫描输入，报告代理层的请求伪造风险相关的命中行与片段</div>
     </li>
